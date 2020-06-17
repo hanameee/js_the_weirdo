@@ -16,5 +16,11 @@
     "bugs": {
         "url": "https://github.com/hanameee/js_the_weirdo/issues"
     },
-    "homepage": "https://github.com/hanameee/js_the_weirdo#readme"
+    "homepage": "https://github.com/hanameee/js_the_weirdo#readme",
+    "dependencies": {
+        "@babel/core": "^7.10.2",
+        "@babel/preset-env": "^7.10.2",
+        "@babel/preset-react": "^7.10.1",
+        "babel-loader": "^8.1.0"
+    }
 }
