@@ -1,0 +1,20 @@
+{
+    "name": "js_the_weirdo",
+    "version": "1.0.0",
+    "description": "<div align=\"center\">   <h1>✨ 이상한 나라의 자바스크립트 🌈</h1>   <strong>퀴즈를 풀면서 이상한 친구 자바스크립트랑 더욱 더 친해져보아요 </strong> </div>",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hanameee/js_the_weirdo.git"
+    },
+    "keywords": [],
+    "author": "@hanameee",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/hanameee/js_the_weirdo/issues"
+    },
+    "homepage": "https://github.com/hanameee/js_the_weirdo#readme"
+}
