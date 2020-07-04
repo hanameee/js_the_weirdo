@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
     mode: "development",
@@ -40,6 +41,20 @@ module.exports = {
                 test: /\.js$/,
                 loader: "source-map-loader",
             },
+            {
+                test: /\.p?css$/,
+                use: [
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            hmr: process.env.NODE_ENV === "development",
+                            reloadAll: true,
+                        },
+                    },
+                    { loader: "css-loader" },
+                    { loader: "postcss-loader" },
+                ],
+            },
         ],
     },
     plugins: [
@@ -49,5 +64,6 @@ module.exports = {
                 env: process.env.NODE_ENV === "development" ? "(개발용)" : "",
             },
         }),
+        new MiniCssExtractPlugin({ filename: "css/style.css" }),
     ],
 };
